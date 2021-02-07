@@ -27,6 +27,8 @@ class LinkedList {
     this.head = newNode;
     this.length++;
   }
+
+  insert() {}
 }
 
 const myLinkedList = new LinkedList(10);
