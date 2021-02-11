@@ -55,12 +55,15 @@ class DoublyLinkedList {
     const newNode = {
       value: value,
       next: null,
+      prev: null,
     };
     const leader = this.traverseToIndex(index - 1);
-    const holdingPointer = leader.next;
+    const follower = leader.next;
 
     leader.next = newNode;
-    newNode.next = holdingPointer;
+    newNode.next = follower;
+    newNode.prev = leader;
+    follower.prev = newNode;
     this.length++;
     return this.printList();
   }
@@ -92,8 +95,8 @@ const myLinkedList = new DoublyLinkedList(10);
 myLinkedList.append(5);
 myLinkedList.append(16);
 myLinkedList.prepend(1);
-/*myLinkedList.insert(2, 35);
-myLinkedList.insert(20, 100);
+myLinkedList.insert(2, 35);
+/*myLinkedList.insert(20, 100);
 console.log(myLinkedList.printList());
 myLinkedList.remove(4);*/
 console.log(myLinkedList.printList());
