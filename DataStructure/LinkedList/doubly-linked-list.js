@@ -96,6 +96,8 @@ myLinkedList.append(5);
 myLinkedList.append(16);
 myLinkedList.prepend(1);
 myLinkedList.insert(2, 35);
+//console.log(myLinkedList.printList());
+//myLinkedList.reverse();
 /*myLinkedList.insert(20, 100);
 console.log(myLinkedList.printList());
 myLinkedList.remove(4);*/
