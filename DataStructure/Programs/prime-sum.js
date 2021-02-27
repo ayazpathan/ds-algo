@@ -6,14 +6,16 @@ const isPrime = (number) => {
 const printPrimeSum = () => {
   let pattern = "";
   let primeSum = 0;
+  const N = 100;
 
-  for (let i = 1; i <= 50; i++) {
+  for (let i = 1; i <= N; i++) {
     if (isPrime(i) === true) {
-      pattern += ` ${i} ${i !== 10 ? "+" : ""} `;
+      pattern += ` ${i} +`;
       primeSum += i;
     }
   }
 
+  console.log(pattern.slice(0, -1));
   console.log(`PRIME SUM : ${primeSum}`);
 };
 
