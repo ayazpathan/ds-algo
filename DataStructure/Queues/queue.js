@@ -11,7 +11,9 @@ class Queue {
     this.last = null;
     this.length = 0;
   }
-  peek() {}
+  peek() {
+    return this.first;
+  }
   enqueue(value) {}
   dequeue() {}
   //isEmpty;
