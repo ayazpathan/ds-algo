@@ -14,7 +14,9 @@ class Queue {
   peek() {
     return this.first;
   }
-  enqueue(value) {}
+  enqueue(value) {
+    // Add an element in the queue
+  }
   dequeue() {}
   //isEmpty;
 }
