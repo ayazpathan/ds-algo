@@ -17,7 +17,9 @@ class Queue {
   enqueue(value) {
     // Add an element in the queue
   }
-  dequeue() {}
+  dequeue() {
+    // Remove the element from the queue
+  }
   //isEmpty;
 }
 
