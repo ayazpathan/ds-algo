@@ -13,6 +13,7 @@ class Queue {
   }
   peek() {
     return this.first;
+    // Return peek
   }
   enqueue(value) {
     // Add an element in the queue
