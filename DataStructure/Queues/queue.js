@@ -17,6 +17,10 @@ class Queue {
   }
   enqueue(value) {
     // Add an element in the queue
+
+    /*
+      addding more comments here
+    */
   }
   dequeue() {
     // Remove the element from the queue
