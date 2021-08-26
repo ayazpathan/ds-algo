@@ -1,3 +1,5 @@
+// Find missing values from given array
+
 function missing(numbers) {
   const numberArray = numbers.sort((num1, num2) => {
     return num1 - num2;
